@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="C:\Users\naaaa\Desktop\weeeeb\2\style.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+<div id="outer-border">
+  <p id="description">
+    please compelete the following survey
+  </p>
+  <form id="survey-form">
+    <div><!--Name-->
+      <div class="labels">
+        <label for="name-label">Name: </label>
+      </div>
+      <div class="input-fields-position">
+        <input type="text" id="name-label" name="name" required autofocus placeholder="Please enter your name" class="input-fields">
+      </div>
+    </div>
+    <div><!--Email-->
+      <div class="labels">
+        <label for="email-label">Email: </label>
+      </div>
+      <div class="input-fields-position">
+        <input type="email" id="email-label" name="email" autofocus class="input-fields" required placeholder="Please enter your email">
+      </div>
+    </div>
+    <div><!--Age-->
+      <div class="labels">
+        <label for="number-label">Age: </label>
+      </div>
+      <div class="input-fields-position">
+        <input type="number" min="10" max="100" class="input-fields" autofocus id="number-label" name="age" required placeholder="please enter your age">
+      </div>
+    </div>
+    <div><!--Gender-->
+      <div class="labels">
+        <label for="dropdown">Gender: </label>
+      </div>
+      <div class="input-fields-position">
+        <select class="input-fields-dropdown" id="dropdown" name="gender">
+          <option disabled value>Please choose your gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others...</option>
+        </select>
+      </div>
+    </div>
+    <div class="status"><!--status-->
+      <div id="status-label" class="labels">
+      <label for="current-state">What option descripes your current status ?</label>
+      </div>
+      <div class="input-fields-position">
+        <label for="student"><input type="radio" name="current-status" id="student" class="radio">Student</label><br>
+        <label for="full-time-job"><input type="radio" name="current-status" id="full-time-job" class="radio">Full time job</label><br>
+        <label for="full-time-learner"><input type="radio" name="current-status" id="full-time-learner" class="radio">Full time learner</label><br>
+        <label for="prefer-not-to-say"><input type="radio" name="current-status" id="prefer-not-to-say" class="radio">Prefer not to say</label><br>
+        <label for="other"><input type="radio" name="current-status" id="other" class="radio">Other</label>
+      </div>
+    </div>
+    <div>
+      <div class="labels">
+        <label for="language">Best spoken language: </label>
+      </div>
+      <div class="input-fields-position">
+        <select class="input-fields-dropdown" id="language" name="language">
+          <option disabled value>Please choose the language you speek the best</option>
+          <option value="arabic">Arabic</option>
+          <option value="english">English</option>
+          <option value="chinese">Chinese</option>
+          <option value="spanish">Spanish</option>
+          <option value="hindi">Hindi</option>
+          <option value="portuguese">Portuguese</option>
+          <option value="bengali">Bengali</option>
+          <option value="russian">Russian</option>
+          <option value="japanese">japanese</option>
+          <option value="punjbi">Punjabi</option>
+        </select>
+      </div>
+    </div>
+    <div><!--programming-language-->
+      <div style="bottom: 105px;" id="status-label" class="labels">
+        <label for="programming-languages">What programming languages can you use ?</label>
+      </div>
+      <div class="input-fields-position">
+        <label for="non"><input type="checkbox" id="non" name="programming-languages" value="0" class="checkbox">non</label><br>
+        <label for="javascript"><input type="checkbox" class="checkbox" name="programming-languages" id="javascript" value="1">Javascript</label><br>
+        <label for="html"><input type="checkbox" class="checkbox" id="html" name="programming-languages" value="2">HTML</label><br>
+        <label for="python"><input type="checkbox" class="checkbox" name="programming-languages" id="python" value="3">Python</label><br>
+        <label for="c++"><input type="checkbox" class="checkbox" id="c++" name="programming-languages" value="4">C++</label><br>
+        <label for="ruby"><input type="checkbox" class="checkbox" id="ruby" name="programming-languages" value="5">Ruby</label><br>
+        <label for="haskel"><input type="checkbox" class="checkbox" id="haskel" name="programming-languages" value="6">Haskel</label>
+      </div>
+    </div>
+    <div>
+      <div id="status-label" style="bottom: 25px" class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+    <div class="input-fields-position">
+        <textarea id="comments" class="input-fields" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</div>
+    </body>
+</html>

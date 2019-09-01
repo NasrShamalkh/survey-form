@@ -1,0 +1,52 @@
+body {
+    text-align: center;
+    background-color: #e6f3f7;
+  }
+  #outer-border {
+    margin: 5px auto 10px auto;
+    width: 80%;
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 1.25px;
+    background-color: #add1cd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .labels {
+    display: inline-block;
+    vertical-alignment: top;
+    text-align: right;
+    width: 20%;
+    margin-right: 25px;
+    
+  }
+  .input-fields-position {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    margin: 10px auto 10px auto
+  }
+  .input-fields {
+    width: 275px;
+    height: 35px;
+  }
+  .input-fields-dropdown {
+    width: 150px;
+    height: 35px;
+  }
+  .radio, checkbox {
+    margin: 5px;
+    
+  }
+  #status-label {
+    position: relative;
+    bottom: 75px;
+    width: 30%;
+    margin-left: -80px;
+  }
+  #submit {
+    height: 45px;
+    width: 90px;
+    font-size: 20px;
+  }
+  
